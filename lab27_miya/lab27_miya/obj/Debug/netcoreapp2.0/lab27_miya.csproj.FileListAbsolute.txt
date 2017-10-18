@@ -1,0 +1,11 @@
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\bin\Debug\netcoreapp2.0\lab27_miya.deps.json
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\bin\Debug\netcoreapp2.0\lab27_miya.runtimeconfig.json
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\bin\Debug\netcoreapp2.0\lab27_miya.runtimeconfig.dev.json
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\bin\Debug\netcoreapp2.0\lab27_miya.dll
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\obj\Debug\netcoreapp2.0\lab27_miya.csprojResolveAssemblyReference.cache
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\obj\Debug\netcoreapp2.0\lab27_miya.csproj.CoreCompileInputs.cache
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\obj\Debug\netcoreapp2.0\lab27_miya.AssemblyInfoInputs.cache
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\obj\Debug\netcoreapp2.0\lab27_miya.AssemblyInfo.cs
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\bin\Debug\netcoreapp2.0\lab27_miya.pdb
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\obj\Debug\netcoreapp2.0\lab27_miya.dll
+C:\Users\shami\Source\Repos\Lab27-Identity-Day2\lab27_miya\lab27_miya\obj\Debug\netcoreapp2.0\lab27_miya.pdb
