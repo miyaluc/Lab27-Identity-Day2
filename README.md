@@ -11,10 +11,10 @@
 
 ### ReadMe
 - Your readme should include the following information:
-	- How long did it take you to complete this assignment?
-	- What did you struggle with? Why? How did you solve?
-	- What did you learn during this assignment?
-    - What resources did you utilize for this assignment?
+	- How long did it take you to complete this assignment? 3-4 hours off and on
+	- What did you struggle with? Why? How did you solve? making my user, once logged in, persist after logging in or registering
+	- What did you learn during this assignment? Register and RegisterAsync are very different. For HttpPost and HttpGet, the names of the actions have to match
+    - What resources did you utilize for this assignment? the class demo and my peers
     
 
 ### To Submit this Assignment
