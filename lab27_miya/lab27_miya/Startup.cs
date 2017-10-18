@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using lab27_miya.Models;
+using lab27_miya.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace lab27_miya
 {
@@ -29,8 +31,18 @@ namespace lab27_miya
         {
             services.AddMvc();
 
+            //this is our Initial DBContext which was automatically generated after we created our controller. It contains the non-identity tables.
             services.AddDbContext<lab27_miyaContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("lab27_miyaContext")));
+            options.UseSqlServer(Configuration.GetConnectionString("lab27_miyaContext")));
+
+            //this context is derived from IdentityDbContext. It is responsible for the ASPNET Identity tables in the database.
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("lab27_miyaContext")));
+
+            //adding Identity dependency injection using ApplicationUser
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
