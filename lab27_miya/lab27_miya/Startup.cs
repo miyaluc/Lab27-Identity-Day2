@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using lab27_miya.Models;
 using lab27_miya.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace lab27_miya
 {
@@ -29,6 +30,11 @@ namespace lab27_miya
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            ////allows cookie persistence without using Identity - 10/18
+            //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            //    .AddCookie("MyCookieLogin", options =>
+            //    options.AccessDeniedPath = new PathString("/Account/Forbidden/"));
+
             services.AddMvc();
 
             //this is our Initial DBContext which was automatically generated after we created our controller. It contains the non-identity tables.
@@ -48,6 +54,8 @@ namespace lab27_miya
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseAuthentication();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

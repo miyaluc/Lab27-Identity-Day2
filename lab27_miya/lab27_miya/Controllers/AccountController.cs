@@ -22,9 +22,8 @@ namespace lab27_miya.Controllers
         }
 
         [HttpGet]
-        public IActionResult Register(string returnUrl = null)
+        public IActionResult Register()
         {
-            ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
 
@@ -43,8 +42,8 @@ namespace lab27_miya.Controllers
 
                 if (result.Succeeded)
                 {
-                    //if the sign in succedded, go ahead and sign in user but DON'T DO ANYTHING until user has signed in - also do not allow userto remain signed in after long periods of time
-                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    //if the sign in succedded, go ahead and sign in user but DON'T DO ANYTHING until user has signed in - also do not allow user to remain signed in after long periods of time
+                    await _signInManager.PasswordSignInAsync(rvm.Email, rvm.Password, true, lockoutOnFailure: false);
 
                     return RedirectToAction("Index", "Home");
                 }

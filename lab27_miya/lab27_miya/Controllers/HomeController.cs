@@ -9,7 +9,7 @@ namespace lab27_miya.Controllers
 {
     public class HomeController : Controller
     {
-        private lab27_miyaContext _context;
+        private readonly lab27_miyaContext _context;
 
         public HomeController(lab27_miyaContext context)
         {

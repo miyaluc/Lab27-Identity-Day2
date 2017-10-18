@@ -17,8 +17,6 @@ namespace lab27_miya.Models
         }
 
         [Required]
-        [StringLength(100, ErrorMessage = "Your password is too long. Must be 100 characters or less.", MinimumLength = 8)]
-        //this will make the password hidden as soon it is typed
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password
