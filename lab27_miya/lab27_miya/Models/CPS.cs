@@ -12,6 +12,10 @@ namespace lab27_miya.Models
         {
             get; set;
         }
+        public string Name
+        {
+            get; set;
+        }
         [Display(Name = "Years in Service")]
         public int YearsInService
         {
