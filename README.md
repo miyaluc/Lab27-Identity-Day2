@@ -7,7 +7,7 @@
   1. Add a Regstration Page
   2. Add a Login Page
   3. Create a layout that your Home page uses to indicate if the user is logged in or not
-  **Stretch** - 4. Add some CSS/HTML to your site
+  4.(+2pts) **Stretch** -Add some CSS/HTML to your site
 
 ### ReadMe
 - Your readme should include the following information:
