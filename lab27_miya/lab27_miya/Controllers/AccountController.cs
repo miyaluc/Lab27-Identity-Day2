@@ -30,7 +30,7 @@ namespace lab27_miya.Controllers
 
         [HttpPost]
         //this method is kind of like a bool but will return yes(success) or no(failure)
-        public async Task<IActionResult> RegisterAsync(RegisterViewModel rvm, string returnUrl = null)
+        public async Task<IActionResult> Register(RegisterViewModel rvm, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
 
